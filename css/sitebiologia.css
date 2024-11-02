@@ -1,0 +1,275 @@
+/*GERAL*/
+
+@charset "UTF-8";
+
+.dm-serif-display-regular {
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.dm-serif-display-regular-italic {
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.pt-serif-regular {
+    font-family: "PT Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.pt-serif-bold {
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.pt-serif-regular-italic {
+    font-family: "PT Serif", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.pt-serif-bold-italic {
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "DM Serif Display", 'Times New Roman', Times, serif;
+}
+
+.container {
+    width: 67.5%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: lighter;
+    color: #233e32;
+}
+
+h3 {
+    font-size: 1.8rem;
+    font-weight: lighter;
+    color: #2c2821;
+}
+
+p {
+    font-size: 1.5rem;
+    font-family: "PT Serif", 'Times New Roman', Times, serif;
+    color: #2c2821;
+}
+
+.botao {
+    padding: 15px;
+    background-color: #161616;
+    border: 2px solid #1b5f39;
+    border-radius: 15px;
+    color: #1b5f39;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: .3s ease all;
+}
+
+.botao:hover {
+    background-color: #1b5f39;
+    color: #fff;
+}
+
+#etiqueta {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: fit-content;
+    height: fit-content;
+    color: #fff;
+    border: 4px solid #1b5f39;
+}
+
+/*HEADER*/
+header {
+    background-image: url(../img/headerP.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    padding: 100px 15px;
+}
+
+header p {
+    color: #fff;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 19vh;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 100px;
+}
+
+
+/*SESSÃO 1*/
+
+#sec1 {
+    background-color: #aee4bd;
+    display: flex;
+    flex-direction: column;
+}
+
+#sec1 .lista {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+#sec1 ol {
+    width: 60%;
+    list-style: none;
+    counter-reset: list-counter;
+}
+
+#sec1 ol li {
+    counter-increment: list-counter;
+    position: relative;
+    margin: 2rem 0;
+    padding: 1rem;
+    padding-left: 6rem;
+    border: 2px solid #161616;
+    border-radius: 15px;
+    transition: .3s ease all;
+}
+
+#sec1 ol li::before {
+    content: counter(list-counter);
+    position: absolute;
+    left: 0;
+    border: 2px solid #161616;
+    border-radius: 40%;
+    padding: .3rem 1rem;
+    margin-left: 1rem;
+    color: #fff;
+    background-color: #1b5f39;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+}
+
+.lista li:hover {
+    transform: scale(1.1);
+}
+
+#sec1 h2 {
+    margin-top: 30px;
+}
+
+#sec1 img {
+    height: 500px;
+    width: 373px;
+    border-radius: 2%;
+    margin-bottom: 30px;
+    object-fit: cover;
+}
+
+/*SESSÃO 2*/
+#sec2 {
+    background-color: #5cc97b;
+}
+
+#sec2 .container {
+    padding: 30px 0;
+}
+
+.boxes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.box {
+    padding: 10px;
+    border: 2px solid #161616;
+    border-radius: 15px;
+    max-width: 30%;
+    transition: .3s ease all;
+}
+
+.box h3 {
+    font-size: 1.5rem;
+}
+
+.box p {
+    font-size: 1.2rem;
+}
+
+.box:hover {
+    transform: scale(1.1);
+    background-color: #aee4bd;
+}
+
+/*FOOTER*/
+footer {
+    background-color: #1b5f39;
+}
+
+footer h2 {
+    color: #fff;
+}
+
+footer p {
+    color: #aee4bd;
+}
+
+footer .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 30px 0;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+footer li {
+    padding: 5px;
+}
+
+.ajuda {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.autores {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.autores li {
+    max-width: 250px;
+}
