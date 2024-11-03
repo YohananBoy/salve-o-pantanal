@@ -333,6 +333,7 @@ footer li {
     footer {
         width: auto;
     }
+
     .ajuda ul {
         flex-direction: column;
     }
@@ -343,12 +344,14 @@ footer li {
 
 }
 
-@media screen and (min-width: 769px){
+@media screen and (min-width: 769px) {
+
     /*GERAL*/
     .container {
         width: 67.5%;
         min-width: 700px;
     }
+
     * {
         width: auto;
     }
@@ -358,6 +361,7 @@ footer li {
         flex-wrap: nowrap;
         justify-content: space-around;
     }
+
     #sec1 ol {
         width: 55%;
         max-width: 864px;
@@ -375,4 +379,3 @@ footer li {
         flex-direction: row;
     }
 }
-
