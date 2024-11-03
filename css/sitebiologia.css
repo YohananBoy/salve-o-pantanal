@@ -343,11 +343,11 @@ footer li {
 
 }
 
-@media screen and (min-width: 961px){
+@media screen and (min-width: 769px){
     /*GERAL*/
     .container {
         width: 67.5%;
-        min-width: 900px;
+        min-width: 700px;
     }
     * {
         width: auto;
@@ -375,3 +375,4 @@ footer li {
         flex-direction: row;
     }
 }
+
