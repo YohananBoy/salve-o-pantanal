@@ -319,7 +319,15 @@ footer li {
         object-position: 0 -70px;
     }
 
+    /*SESSÃO 2*/
+    .box:hover {
+        transform: scale(1.05);
+    }
+
     /*FOOTER*/
+    footer {
+        width: auto;
+    }
     .ajuda ul {
         flex-direction: column;
     }
