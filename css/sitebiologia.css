@@ -276,8 +276,13 @@ footer li {
     justify-content: space-evenly;
 }
 
+.autores ul {
+    display: flex;
+    justify-content: space-between;
+}
+
 .autores li {
-    max-width: 210px;
+    max-width: 200px;
 }
 
 /*RESPONSIVIDADE*/
@@ -338,8 +343,35 @@ footer li {
 
 }
 
-@media screen and (min-width: 1000px){
+@media screen and (min-width: 961px){
+    /*GERAL*/
+    .container {
+        width: 67.5%;
+        min-width: 900px;
+    }
     * {
         width: auto;
+    }
+
+    /*SESSÃO 1*/
+    #sec1 .lista {
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+    #sec1 ol {
+        width: 55%;
+        max-width: 864px;
+    }
+
+    #sec1 img {
+        margin-left: 20px;
+        height: 500px;
+        width: 373px;
+        object-position: center;
+    }
+
+    /*FOOTER*/
+    .ajuda ul {
+        flex-direction: row;
     }
 }
